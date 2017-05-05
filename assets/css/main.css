@@ -2710,7 +2710,7 @@
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("../../images/header.jpg");
+			background-image: url("images/overlay4.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 			background-size: auto,							cover;
 		}
 
@@ -2799,18 +2799,19 @@
 	#header {
 		padding: 9em 0 9em 0 ;
 		background-color: #4686a0;
-		color: rgba(255, 255, 255, 0.75);
+		color: rgba(0, 0, 0, 1);
+    font-weight: bold;
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
+		background-image: url("images/worthy-of-elegance-13575.jpg"), url("images/overlay3.svg"), linear-gradient(45deg, #9dc66b 5%, #4fa49a 30%, #4361c2);
 		background-position: top left,						center center,					center center;
-		background-size: auto,							cover,							cover;
+		background-size: cover,							cover,							cover;
 		overflow: hidden;
 		position: relative;
 		text-align: center;
 	}
 
 		#header a {
-			border-bottom-color: rgba(255, 255, 255, 0.5);
+			border-bottom-color: rgba(0, 0, 0, 0.5);
 		}
 
 			#header a:hover {
@@ -2818,7 +2819,9 @@
 			}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6, #header strong, #header b {
-			color: #ffffff;
+			/*color: #ffffff;*/
+			color: black;
+      font-weight: bold;
 		}
 
 		#header header p {
@@ -2834,8 +2837,8 @@
 		#header input[type="button"],
 		#header button,
 		#header .button {
-			box-shadow: inset 0 0 0 1px #ffffff;
-			color: #ffffff !important;
+			box-shadow: inset 0 0 0 1px black;
+			color: black !important;
 		}
 
 			#header input[type="submit"]:hover,
@@ -2882,11 +2885,12 @@
 				}
 
 		#header ul.major-icons li .icon {
-			border-color: #ffffff;
+			/*border-color: #ffffff;*/
+			border-color: black;
 		}
 
 		#header .icon.major {
-			color: #ffffff;
+			color: black;
 		}
 
 		#header h1 {
@@ -2903,7 +2907,7 @@
 		}
 
 			#header .actions:after {
-				background: #ffffff;
+				background: black;
 				content: '';
 				height: 100vh;
 				left: 50%;
@@ -2925,6 +2929,7 @@
 			-webkit-transform: scale(1);
 			-ms-transform: scale(1);
 			transform: scale(1);
+      /*background: rgba(0, 0, 0, 0.6);*/
 			opacity: 1;
 			position: relative;
 			z-index: 1;
@@ -2986,11 +2991,11 @@
 	#footer {
 		padding: 6em 0 6em 0 ;
 		background-color: #4686a0;
-		color: rgba(255, 255, 255, 0.75);
+		color: rgba(0, 0, 0, 1);
 		background-attachment: fixed,							fixed,							fixed;
-		background-image: url("images/overlay2.png"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
+		background-image: url("images/worthy-of-elegance-13575.jpg"), url("images/overlay4.svg"), linear-gradient(45deg, #4361c2, #4fa49a 50%, #9dc66b 95%);
 		background-position: top left,						center center,					center center;
-		background-size: auto,							cover,							cover;
+		background-size: cover,							cover,							cover;
 		text-align: center;
 	}
 
