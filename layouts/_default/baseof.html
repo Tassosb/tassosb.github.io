@@ -1,18 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     {{ $style := resources.Get "style.css" }}
-    <link rel="stylesheet" href="{{ $style.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}" />
   </head>
   <body>
+    <h1 class="text-3xl font-bold mx-auto max-w-min">{{ .Title }}</h1>
+    <div
+      class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center justify-center space-x-4"
+    >
+      <h1 class="text-3xl font-bold underline shrink-0">{{ .Title }}</h1>
+    </div>
     <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about/">About</a></li>
-        </ul>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about/">About</a></li>
+      </ul>
     </nav>
     {{ block "main" . -}}{{- end }}
   </body>
