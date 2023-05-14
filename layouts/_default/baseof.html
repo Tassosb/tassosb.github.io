@@ -9,20 +9,56 @@
     <title>{{ .Title }} | {{ .Site.Title }}</title>
     {{ $style := resources.Get "style.css" }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Carter+One&family=Smokum&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1 class="text-3xl font-bold mx-auto max-w-min">{{ .Title }}</h1>
-    <div
-      class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center justify-center space-x-4"
-    >
-      <h1 class="text-3xl font-bold underline shrink-0">{{ .Title }}</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about/">About</a></li>
+  <body class="bg-amber-50 font-serif">
+    <div class="mx-auto max-w-min flex items-center flex-col">
+      <h1 class="text-7xl font-bold mt-4 font-title">{{ .Title }}</h1>
+      {{ $headerImg := resources.Get "tassos-guitar.jpeg" }}
+      <!-- <img
+        src="{{
+  $headerImg.Permalink }}"
+        alt="tassos-guitar-header"
+      /> -->
+      <ul class="flex justify-center my-5">
+        <li class="mr-2">
+          <a href="https://tassosbareiss.bandcamp.com/">
+            <img
+              alt=""
+              fetchpriority="high"
+              src="https://static.wixstatic.com/media/e9bad3a9dda24ecc98a51fd33aef63c8.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9bad3a9dda24ecc98a51fd33aef63c8.png"
+              style="width: 44px; height: 44px; object-fit: cover"
+            />
+          </a>
+        </li>
+        <li class="mr-2">
+          <img
+            alt=""
+            fetchpriority="high"
+            src="https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e1aa082f7c0747168d9cf43e77046142.png"
+            style="width: 44px; height: 44px; object-fit: cover"
+          />
+        </li>
+        <li class="mr-2">
+          <a href="https://www.youtube.com/@tassosbareiss7031/videos">
+            <img
+              alt=""
+              fetchpriority="high"
+              src="https://static.wixstatic.com/media/45bce1d726f64f1999c49feae57f6298.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/45bce1d726f64f1999c49feae57f6298.png"
+              style="width: 44px; height: 44px; object-fit: cover"
+            />
+          </a>
+        </li>
       </ul>
-    </nav>
+    </div>
+
     {{ block "main" . -}}{{- end }}
   </body>
 </html>
