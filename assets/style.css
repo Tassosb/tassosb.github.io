@@ -626,10 +626,6 @@ video {
   font-family: 'Carter One', cursive;
 }
 
-.font-western {
-  font-family: 'Smokum', cursive;
-}
-
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -637,21 +633,6 @@ video {
 
 .text-7xl {
   font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
-.text-5xl {
-  font-size: 3rem;
   line-height: 1;
 }
 
