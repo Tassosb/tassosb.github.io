@@ -1,4 +1,4 @@
 baseURL = 'http://tassosmusic.com/'
 languageCode = 'en-us'
-title = 'Tassos Music'
+title = 'Tassos Bareiss'
 disableKinds = ['taxonomy', 'term']

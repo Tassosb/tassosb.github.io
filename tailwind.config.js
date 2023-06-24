@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        title: ["'Carter One', cursive"],
+        title: ["'Caprasimo', cursive"],
         western: ["'Smokum', cursive"],
       },
     },

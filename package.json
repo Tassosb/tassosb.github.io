@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:tw": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css --watch"
+    "dev": "concurrently \"npm:build-tw\" \"npm:hugo-serve\"",
+    "build-tw": "npx tailwindcss -i ./assets/main.css -o ./assets/style.css --watch",
+    "hugo-serve": "hugo serve"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^8.2.0",
     "prettier": "2.8.8",
     "tailwindcss": "^3.3.2"
   }
