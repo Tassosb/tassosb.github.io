@@ -19,20 +19,18 @@
       href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Carter+One&family=Smokum&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akronim&family=Bungee+Shade&family=Cabin+Sketch:wght@700&family=Caesar+Dressing&family=Cherry+Bomb+One&family=Ewert&family=Faster+One&family=Macondo&family=Monoton&family=Mynerve&family=Rock+3D&family=Rock+Salt&family=Rubik+Puddles&family=Tilt+Prism&family=Train+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-amber-50 font-serif">
+  <body class="bg-amber-100">
     <div class="mx-auto flex items-center flex-col">
-      <h1 class="text-7xl mt-4 font-title text-amber-700 border-b-2">
-        Tassos Bareiss
-      </h1>
-      <!-- {{ $headerImg := resources.Get "tassos-guitar.jpeg" }}
-      <img
-        src="{{
-  $headerImg.Permalink }}"
-        alt="tassos-guitar-header"
-      /> -->
+      <!-- Second favorite title font.. -->
+      <!-- <h1 class="text-9xl mt-4 font-title2 text-amber-950">Tassos Bareiss</h1> -->
+      <h1 class="text-7xl mt-4 font-title text-amber-950">Tassos Bareiss</h1>
       <ul class="flex justify-center my-5">
-        <li class="mr-2">
+        <!-- <li class="mr-2">
           <a href="https://tassosbareiss.bandcamp.com/">
             <img
               alt=""
@@ -41,17 +39,19 @@
               style="width: 44px; height: 44px; object-fit: cover"
             />
           </a>
+        </li> -->
+        <li class="mr-2">
+          <a href="https://www.instagram.com/tassosmusic/">
+            <img
+              alt=""
+              fetchpriority="high"
+              src="https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e1aa082f7c0747168d9cf43e77046142.png"
+              style="width: 44px; height: 44px; object-fit: cover"
+            />
+          </a>
         </li>
         <li class="mr-2">
-          <img
-            alt=""
-            fetchpriority="high"
-            src="https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e1aa082f7c0747168d9cf43e77046142.png"
-            style="width: 44px; height: 44px; object-fit: cover"
-          />
-        </li>
-        <li class="mr-2">
-          <a href="https://www.youtube.com/@tassosbareiss7031/videos">
+          <a href="https://www.youtube.com/@tassosbareiss">
             <img
               alt=""
               fetchpriority="high"
@@ -64,5 +64,10 @@
     </div>
 
     {{ block "main" . -}}{{- end }}
+
+    <div class="mx-auto flex items-center flex-col mt-6 mb-3">
+      <h2 class="text-4xl font-bold">Contact</h2>
+      <div class="font-sans text-xl">Email: tassosbareiss@gmail.com</div>
+    </div>
   </body>
 </html>
