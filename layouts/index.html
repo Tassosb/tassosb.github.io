@@ -1,1 +1,45 @@
-{{ define "main" -}} {{ partial "pagecontent.html" . }} {{- end }}
+{{ define "main" -}}
+<div class="flex flex-col items-center">
+  <h2 class="text-2xl font-sans font-bold mt-3 text-center">
+    Winner of "Love Song for Las Cruces" Contest
+  </h2>
+  <div class="w-full max-w-lg">
+    <!-- YT by defaults sets iframe to a fixed width and height, which is not responsive  -->
+    <div class="relative w-full h-0 pb-[56.25%]">
+      <iframe
+        class="absolute top-0 left-0"
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/aZbLQOStAq4?si=BuJxNagVYazLXsfs"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+  <h2 class="text-2xl font-sans font-bold mt-3 text-center">
+    2023 NPR Tiny Desk Submission
+  </h2>
+  <div class="w-full max-w-lg">
+    <div class="relative w-full h-0 pb-[56.25%]">
+      <iframe
+        class="absolute top-0 left-0"
+        width="100%"
+        height="100%"
+        src="https://www.youtube.com/embed/R2qA27Wg6nI?si=ZHzbYyGeq8FeuA7k"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+
+  <div class="mx-auto flex items-center flex-col mt-6 mb-3">
+    <h2 class="text-4xl font-bold">Contact</h2>
+    <div class="font-sans text-xl">Email: tassosbareiss@gmail.com</div>
+  </div>
+</div>
+
+{{- end }}
