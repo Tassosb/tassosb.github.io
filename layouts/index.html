@@ -1,99 +1,57 @@
 {{ define "main" -}}
-<div class="flex flex-col items-center">
-  <h2 class="text-2xl font-sans font-bold mt-3 text-center">
-    NEW SINGLE - "Do You Remember"
-  </h2>
-  <div class="w-full max-w-lg">
-    <!-- YT by defaults sets iframe to a fixed width and height, which is not responsive  -->
-    <!-- <div class="relative w-full h-0 pb-[56.25%]"> -->
-    <iframe
-      style="border-radius: 12px"
-      src="https://open.spotify.com/embed/track/1oTlXsQOxVbuowgONIvC7U?utm_source=generator"
-      width="100%"
-      height="352"
-      frameborder="0"
-      allowfullscreen=""
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      loading="lazy"
-    ></iframe>
-    <div class="mt-3">
-      <iframe
-        allow="autoplay *; encrypted-media *;"
-        frameborder="0"
-        height="150"
-        style="
-          width: 100%;
-          max-width: 660px;
-          overflow: hidden;
-          background: transparent;
-        "
-        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-        src="https://embed.music.apple.com/us/album/do-you-remember/1744986001?i=1744986007"
-      ></iframe>
-    </div>
-    <!-- </div> -->
-  </div>
-  <h2 class="text-2xl font-sans font-bold mt-3 text-center">
-    2024 NPR Tiny Desk Contest Entry
-  </h2>
-  <div class="w-full max-w-lg">
-    <!-- YT by defaults sets iframe to a fixed width and height, which is not responsive  -->
-    <div class="relative w-full h-0 pb-[56.25%]">
-      <iframe
-        class="absolute top-0 left-0"
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/VqeuGe4rrrs?si=xCuoVW5i8HStQJ2A"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
-  <h2 class="text-2xl font-sans font-bold mt-3 text-center">
-    Crossroads Music Session
-  </h2>
-  <div class="w-full max-w-lg">
-    <!-- YT by defaults sets iframe to a fixed width and height, which is not responsive  -->
-    <div class="relative w-full h-0 pb-[56.25%]">
-      <iframe
-        class="absolute top-0 left-0"
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/P3xT_pzdYdI?si=lrRoglFraGzyNrH5"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
-  <h2 class="text-2xl font-sans font-bold mt-3 text-center">
-    Winner of "Love Song for Las Cruces" Contest
-  </h2>
-  <div class="w-full max-w-lg">
-    <!-- YT by defaults sets iframe to a fixed width and height, which is not responsive  -->
-    <div class="relative w-full h-0 pb-[56.25%]">
-      <iframe
-        class="absolute top-0 left-0"
-        width="100%"
-        height="100%"
-        src="https://www.youtube.com/embed/aZbLQOStAq4?si=BuJxNagVYazLXsfs"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
+<div class="flex flex-col items-center mt-2">
+  <div class="w-full max-w-[448px]">
+    <a href="https://ffm.to/9qmerme" target="_blank">
+      {{ $tired_eyes := resources.Get "tired-eyes-singles-small.png" }}
+      <div
+        class="border border-black rounded p-3 mt-4 flex items-center hover:scale-105 duration-75 bg-white"
+      >
+        <img src="{{ $tired_eyes.Permalink }}" class="thumbnail" />
+        <div class="ml-4 font-bold">I Don't Think I Like You (single)</div>
+      </div>
+    </a>
+    <a href="https://ffm.to/9qmerme" target="_blank">
+      {{ $polly := resources.Get "polly-small.png" }}
+      <div
+        class="border border-black rounded p-3 mt-4 flex items-center hover:scale-105 duration-75 bg-white"
+      >
+        <img src="{{ $polly.Permalink }}" class="thumbnail" />
+        <div class="ml-4 font-bold">Polly the Drummer (single)</div>
+      </div>
+    </a>
+    <a href="https://ffm.to/2ekp0po" target="_blank">
+      {{ $postcard := resources.Get "postcard-small.jpg" }}
+      <div
+        class="border border-black rounded p-3 mt-4 flex items-center hover:scale-105 duration-75 bg-white"
+      >
+        <img src="{{ $postcard.Permalink }}" class="thumbnail" />
+        <div class="ml-4 font-bold">Postcard (EP)</div>
+      </div>
+    </a>
+    <a
+      href="https://www.youtube.com/embed/aZbLQOStAq4?si=BuJxNagVYazLXsfs"
+      target="_blank"
+    >
+      {{ $visit_lc := resources.Get "visit-lc.jpg" }}
+      <div
+        class="border border-black rounded p-3 mt-4 flex items-center hover:scale-105 duration-75 bg-white"
+      >
+        <img src="{{ $visit_lc.Permalink }}" class="thumbnail" />
+        <div class="ml-4 font-bold">Love Song for Las Cruces (video)</div>
+      </div>
+    </a>
   </div>
 
-  <div class="mx-auto flex items-center flex-col mt-6 mb-3">
-    <h3 class="mb-4 text-2xl font-bold underline p-1">
-      <a href="/lyrics"><em>Lyrics</em></a>
-    </h3>
-    <h2 class="text-4xl font-bold">Contact</h2>
-    <div class="font-sans text-xl">Email: tassosbareiss@gmail.com</div>
+  <div class="mx-auto mt-5 w-full max-w-[450px]">
+    <script
+      async
+      data-uid="947b51c09d"
+      src="https://tassos.ck.page/947b51c09d/index.js"
+    ></script>
+  </div>
+
+  <div class="mx-auto mt-6 mb-3">
+    <div class="font-sans text-l">Contact: tassosbareiss@gmail.com</div>
   </div>
 </div>
 

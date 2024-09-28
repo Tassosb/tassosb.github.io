@@ -26,62 +26,58 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-amber-100">
-    <div class="mx-auto flex items-center flex-col">
-      <!-- Second favorite title font.. -->
-      <!-- <h1 class="text-9xl mt-4 font-title2 text-amber-950">Tassos Bareiss</h1> -->
-      <a href="/">
-        <h1 class="text-7xl mt-4 font-title text-amber-950 text-center">
-          Tassos Bareiss
-        </h1>
-      </a>
-      <ul class="flex justify-center mt-5 mb-3">
-        <li class="mr-2">
-          {{ $spotify_icon := resources.Get "spotify_icon.png" }}
-          <a
-            href="https://open.spotify.com/artist/5sDOGjkHHJ2i3OozJAWBVk?si=TTeYaVbXSo6pTzNyQFBi2w"
-          >
-            <img
-              alt=""
-              fetchpriority="high"
-              src="{{ $spotify_icon.Permalink }}"
-              style="width: 44px; height: 44px; object-fit: cover"
-            />
-          </a>
-        </li>
-        <li class="mr-2">
-          <a href="https://tassosbareiss.bandcamp.com/">
-            <img
-              alt=""
-              fetchpriority="high"
-              src="https://static.wixstatic.com/media/e9bad3a9dda24ecc98a51fd33aef63c8.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9bad3a9dda24ecc98a51fd33aef63c8.png"
-              style="width: 44px; height: 44px; object-fit: cover"
-            />
-          </a>
-        </li>
-        <li class="mr-2">
-          <a href="https://www.instagram.com/tassosmusic/">
-            <img
-              alt=""
-              fetchpriority="high"
-              src="https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e1aa082f7c0747168d9cf43e77046142.png"
-              style="width: 44px; height: 44px; object-fit: cover"
-            />
-          </a>
-        </li>
-        <li class="mr-2">
-          <a href="https://www.youtube.com/@tassosbareiss">
-            <img
-              alt=""
-              fetchpriority="high"
-              src="https://static.wixstatic.com/media/45bce1d726f64f1999c49feae57f6298.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/45bce1d726f64f1999c49feae57f6298.png"
-              style="width: 44px; height: 44px; object-fit: cover"
-            />
-          </a>
-        </li>
-      </ul>
+  <body>
+    <div class="bg-white/75 absolute w-full h-full">
+      <div class="mx-auto flex items-center flex-col">
+        <h1 class="text-4xl mt-4 text-center font-title2">Tassos Bareiss</h1>
+        <p>Online home for my music</p>
+        <ul class="flex justify-center mt-4">
+          <li class="mr-2">
+            {{ $spotify_icon := resources.Get "spotify_icon.png" }}
+            <a
+              href="https://open.spotify.com/artist/5sDOGjkHHJ2i3OozJAWBVk?si=TTeYaVbXSo6pTzNyQFBi2w"
+            >
+              <img
+                alt=""
+                fetchpriority="high"
+                src="{{ $spotify_icon.Permalink }}"
+                class="hover:scale-105 duration-75 thumbnail"
+              />
+            </a>
+          </li>
+          <li class="mr-2">
+            <a href="https://tassosbareiss.bandcamp.com/">
+              <img
+                alt=""
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/e9bad3a9dda24ecc98a51fd33aef63c8.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e9bad3a9dda24ecc98a51fd33aef63c8.png"
+                class="hover:scale-105 duration-75 thumbnail"
+              />
+            </a>
+          </li>
+          <li class="mr-2">
+            <a href="https://www.instagram.com/tassosmusic/">
+              <img
+                alt=""
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/e1aa082f7c0747168d9cf43e77046142.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/e1aa082f7c0747168d9cf43e77046142.png"
+                class="hover:scale-105 duration-75 thumbnail"
+              />
+            </a>
+          </li>
+          <li class="mr-2">
+            <a href="https://www.youtube.com/@tassosbareiss">
+              <img
+                alt=""
+                fetchpriority="high"
+                src="https://static.wixstatic.com/media/45bce1d726f64f1999c49feae57f6298.png/v1/fill/w_88,h_88,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/45bce1d726f64f1999c49feae57f6298.png"
+                class="hover:scale-105 duration-75 thumbnail"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      {{ block "main" . -}}{{- end }}
     </div>
-
-    {{ block "main" . -}}{{- end }}
   </body>
 </html>
