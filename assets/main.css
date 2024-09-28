@@ -7,3 +7,8 @@
   height: 36px;
   object-fit: cover;
 }
+
+body {
+  /* redudant with tailwind code in baseof.html, but for some reason necessary */
+  background-image: url("./bosque-ditch-dirty.jpg");
+}

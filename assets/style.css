@@ -665,8 +665,8 @@ video {
   background-color: rgb(255 255 255 / 0.75);
 }
 
-.bg-contain {
-  background-size: contain;
+.bg-cover {
+  background-size: cover;
 }
 
 .p-3 {
@@ -708,6 +708,11 @@ video {
   height: 36px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+body {
+  /* redudant with tailwind code in baseof.html, but for some reason necessary */
+  background-image: url("./bosque-ditch-dirty.jpg");
 }
 
 .hover\:scale-105:hover {
