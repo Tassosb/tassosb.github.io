@@ -615,11 +615,6 @@ video {
   height: 100%;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .w-full {
   width: 100%;
 }
@@ -670,21 +665,12 @@ video {
   background-color: rgb(255 255 255 / 0.75);
 }
 
-.bg-white\/50 {
-  background-color: rgb(255 255 255 / 0.5);
-}
-
-.bg-white\/60 {
-  background-color: rgb(255 255 255 / 0.6);
+.bg-contain {
+  background-size: contain;
 }
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .text-center {
@@ -722,11 +708,6 @@ video {
   height: 36px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-body {
-  background-image: url("tired-eyes-singles.png");
-  background-size: cover;
 }
 
 .hover\:scale-105:hover {

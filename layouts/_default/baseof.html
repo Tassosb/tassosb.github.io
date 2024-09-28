@@ -26,7 +26,8 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  {{ $a := resources.Get "bosque-ditch-dirty.jpg" }}
+  <body class="bg-[url('{{ $a.Permalink }}')] bg-contain">
     <div class="bg-white/75 absolute w-full h-full">
       <div class="mx-auto flex items-center flex-col">
         <h1 class="text-4xl mt-4 text-center font-title2">Tassos Bareiss</h1>
