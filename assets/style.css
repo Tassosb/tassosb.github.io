@@ -710,11 +710,6 @@ video {
      object-fit: cover;
 }
 
-body {
-  /* redudant with tailwind code in baseof.html, but for some reason necessary */
-  background-image: url("./bosque-ditch-dirty.jpg");
-}
-
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
