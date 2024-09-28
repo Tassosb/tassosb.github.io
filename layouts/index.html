@@ -1,10 +1,10 @@
 {{ define "main" -}}
 <div class="flex flex-col items-center mt-2">
-  <div class="w-11/12 max-w-[448px]">
+  <div class="w-11/12 max-w-[449px]">
     <a href="https://ffm.to/9qmerme" target="_blank">
       {{ $tired_eyes := resources.Get "tired-eyes-singles-small.png" }}
       <div
-        class="border border-black rounded-lg p-3 mt-4 flex items-center hover:scale-105 duration-75"
+        class="border border-dark-border rounded p-3 mt-4 flex items-center hover:scale-105 duration-75"
       >
         <img src="{{ $tired_eyes.Permalink }}" class="thumbnail" />
         <div class="ml-4">I Don't Think I Like You (single)</div>
@@ -13,7 +13,7 @@
     <a href="https://ffm.to/9qmerme" target="_blank">
       {{ $polly := resources.Get "polly-small.png" }}
       <div
-        class="border border-black rounded-lg p-3 mt-4 flex items-center hover:scale-105 duration-75"
+        class="border border-dark-border rounded p-3 mt-4 flex items-center hover:scale-105 duration-75"
       >
         <img src="{{ $polly.Permalink }}" class="thumbnail" />
         <div class="ml-4">Polly the Drummer (single)</div>
@@ -22,7 +22,7 @@
     <a href="https://ffm.to/2ekp0po" target="_blank">
       {{ $postcard := resources.Get "postcard-small.jpg" }}
       <div
-        class="border border-black rounded-lg p-3 mt-4 flex items-center hover:scale-105 duration-75"
+        class="border border-dark-border rounded p-3 mt-4 flex items-center hover:scale-105 duration-75"
       >
         <img src="{{ $postcard.Permalink }}" class="thumbnail" />
         <div class="ml-4">Postcard (EP)</div>
@@ -34,15 +34,14 @@
     >
       {{ $visit_lc := resources.Get "visit-lc.jpg" }}
       <div
-        class="border border-black rounded-lg p-3 mt-4 flex items-center hover:scale-105 duration-75"
+        class="border border-dark-border rounded p-3 mt-4 flex items-center hover:scale-105 duration-75"
       >
         <img src="{{ $visit_lc.Permalink }}" class="thumbnail" />
         <div class="ml-4">Love Song for Las Cruces (video)</div>
       </div>
     </a>
   </div>
-
-  <div class="mx-auto mt-5 w-11/12 max-w-[450px]">
+  <div class="mx-auto mt-4 w-11/12 max-w-[450px]">
     <script
       async
       data-uid="947b51c09d"
@@ -51,7 +50,7 @@
   </div>
 
   <div class="mx-auto mt-6 mb-3">
-    <div class="font-sans text-l">Contact: tassosbareiss@gmail.com</div>
+    <div class="text-l">Contact: tassosbareiss@gmail.com</div>
   </div>
 </div>
 

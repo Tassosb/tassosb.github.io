@@ -8,9 +8,13 @@
   object-fit: cover;
 }
 
-/* Prevent hover effects on touch devices */
+body {
+  font-family: "Fredoka", sans-serif;
+}
+
+/* Prevent hover:scale effects on touch devices */
 @media (pointer: coarse) {
-  a:hover {
-    all: revert-layer;
+  div:hover {
+    transform: none !important;
   }
 }
