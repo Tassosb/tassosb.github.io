@@ -7,3 +7,10 @@
   height: 36px;
   object-fit: cover;
 }
+
+/* Prevent hover effects on touch devices */
+@media (pointer: coarse) {
+  a:hover {
+    all: revert-layer;
+  }
+}
