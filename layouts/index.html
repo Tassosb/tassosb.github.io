@@ -43,10 +43,22 @@
   </div>
   <div class="mx-auto mt-4 w-11/12 max-w-[450px]">
     <script
-      async
       data-uid="947b51c09d"
       src="https://tassos.ck.page/947b51c09d/index.js"
     ></script>
+    <script>
+      // Remove the "Built by Kit" ad
+      window.addEventListener(
+        "DOMContentLoaded",
+        function () {
+          console.log("display none");
+          document.getElementsByClassName(
+            "formkit-powered-by-convertkit"
+          )[0].style.display = "none";
+        },
+        false
+      );
+    </script>
   </div>
 
   <div class="mx-auto mt-6 mb-3">
