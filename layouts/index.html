@@ -1,6 +1,15 @@
 {{ define "main" -}}
 <div class="flex flex-col items-center mt-2">
   <div class="w-11/12 max-w-[449px]">
+    <a href="https://ffm.to/x30obe1" target="_blank">
+      {{ $little_fires := resources.Get "little-fires.jpeg" }}
+      <div
+        class="border border-dark-border rounded p-3 mt-4 flex items-center hover:scale-105 duration-75"
+      >
+        <img src="{{ $little_fires.Permalink }}" class="thumbnail" />
+        <div class="ml-4">Little Fires (EP from my band Shoot the Moon)</div>
+      </div>
+    </a>
     <a href="https://ffm.to/r8e7wv4" target="_blank">
       {{ $tired_eyes := resources.Get "tired-eyes-singles-small.png" }}
       <div
