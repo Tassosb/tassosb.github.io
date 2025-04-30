@@ -17,6 +17,7 @@
     --default-mono-font-family: var(--font-mono);
     --color-dark-border: rgb(93, 70, 49);
     --color-beige: #e5e5d1;
+    --color-white: white;
     --font-title: "Akronim", cursive;
   }
 }
@@ -262,6 +263,9 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .duration-75 {
     --tw-duration: 75ms;
