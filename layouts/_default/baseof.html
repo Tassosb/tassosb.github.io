@@ -26,6 +26,8 @@
       rel="stylesheet"
     />
   </head>
+  {{ $splash := resources.Get "splash.jpeg" }}
+  <!-- <body class="bg-[url({{$splash.Permalink}})]"> -->
   <body>
     <div class="mx-auto flex items-center flex-col">
       <h1 class="text-8xl mt-4 text-center font-title">Tassos Bareiss</h1>

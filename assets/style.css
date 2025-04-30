@@ -13,7 +13,6 @@
     --text-8xl: 6rem;
     --text-8xl--line-height: 1;
     --font-weight-bold: 700;
-    --radius-sm: 0.25rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-dark-border: rgb(93, 70, 49);
@@ -237,6 +236,9 @@
   .bg-beige {
     background-color: var(--color-beige);
   }
+  .bg-\[url\(\{\{\$splash\.Permalink\}\}\)\] {
+    background-image: url({{$splash.Permalink}});
+  }
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
@@ -288,7 +290,8 @@
 }
 body {
   font-family: "Fredoka", sans-serif;
-  background-color: lightblue;
+  background-image: url("splash.jpeg");
+  background-size: cover;
 }
 @media (pointer: coarse) {
   div:hover {

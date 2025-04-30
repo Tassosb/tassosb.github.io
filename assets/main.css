@@ -34,7 +34,9 @@
 
 body {
   font-family: "Fredoka", sans-serif;
-  background-color: lightblue;
+  /* background-color: lightblue; */
+  background-image: url("splash.jpeg");
+  background-size: cover;
 }
 
 /* Prevent hover:scale effects on touch devices */
