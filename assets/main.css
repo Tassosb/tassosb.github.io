@@ -33,9 +33,21 @@
   object-fit: cover;
 }
 
+.link {
+  color: blue;
+}
+
+.epk-link {
+  color: #ffbf00;
+}
+
+.download-link {
+  /* color: gray; */
+  font-style: italic;
+}
+
 body {
   font-family: "Fredoka", sans-serif;
-  /* background-color: lightblue; */
   background-image: url("splash.jpeg");
   background-size: cover;
 }

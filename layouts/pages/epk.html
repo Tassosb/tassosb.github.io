@@ -1,0 +1,37 @@
+{{ define "main" -}}
+<div
+  class="mx-auto flex flex-col items-center mt-4 mb-3 bg-white p-4 max-w-[600px] rounded"
+>
+  <h2 class="text-4xl mb-4">Electronic Press Kit</h2>
+  <h2 class="text-2xl">PHOTOS</h2>
+  {{- $me := resources.Get "me.jpeg" }}
+  <img src="{{ $me.Permalink }}" class="w-[450px] object-contain mb-2" />
+  <a class="download-link" href="{{ $me.Permalink }}" download="tassos-photo-1"
+    >Download</a
+  >
+  <h2 class="text-2xl mt-4">BIO</h2>
+  <p>
+    Tassos Bareiss writes songs where every word matters, where imagery conjures
+    worlds rich with symbolism, where the first line might foreshadow the last.
+    With a voice that resonates with the depth of his lyrics and self-assured
+    musicianship featuring nimble finger-picking, Tassos delivers performances
+    that have been convincing concert-goers he is a singer-songwriter worth
+    paying attention to.
+  </p>
+  <br />
+  <p>
+    Originally from the Northeast, Tassos lives in Albuquerque, NM and finds
+    joy, connection, and challenge in the local music scene there. He won the
+    Love Song for Las Cruces songwriting contest in 2023.
+  </p>
+  <h2 class="text-2xl mt-4">PRESS</h2>
+  <p>
+    <a
+      class="link"
+      target="_blank"
+      href="https://nmcostudio.com/2023/08/01/love-song-winner/"
+      >"Meet the Love Song for Las Cruces Winner" - NMCO Studio</a
+    >
+  </p>
+</div>
+{{- end }}

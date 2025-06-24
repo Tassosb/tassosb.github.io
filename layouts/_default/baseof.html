@@ -26,11 +26,14 @@
       rel="stylesheet"
     />
   </head>
+  <!-- Both of these lines are needed to render the background image -->
   {{ $splash := resources.Get "splash.jpeg" }}
   <!-- <body class="bg-[url({{$splash.Permalink}})]"> -->
   <body>
     <div class="mx-auto flex items-center flex-col">
-      <h1 class="text-8xl mt-4 text-center font-title">Tassos Bareiss</h1>
+      <a href="/">
+        <h1 class="text-8xl mt-4 text-center font-title">Tassos Bareiss</h1>
+      </a>
       <ul class="flex justify-center mt-4">
         <li class="mr-2">
           {{ $spotify_icon := resources.Get "spotify_icon.png" }}
@@ -78,5 +81,9 @@
       </ul>
     </div>
     {{ block "main" . -}}{{- end }}
+    <div class="mx-auto mt-4 mb-3 text-l flex flex-col items-center">
+      <a class="epk-link" href="/epk">EPK</a>
+      <div class="text-white">Contact: tassosbareiss@gmail.com</div>
+    </div>
   </body>
 </html>
