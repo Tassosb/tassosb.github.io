@@ -1,6 +1,15 @@
 {{ define "main" -}}
 <div class="flex flex-col items-center mt-2">
   <div class="w-11/12 max-w-[449px]">
+    <a href="https://lynkify.in/album/crane-song/CluXnVBp" target="_blank">
+      {{ $crane_song := resources.Get "crane-song.jpg" }}
+      <div
+        class="bg-beige border border-dark-border rounded p-3 mt-4 flex items-center hover:scale-105 duration-75"
+      >
+        <img src="{{ $crane_song.Permalink }}" class="thumbnail" />
+        <div class="ml-4">Crane Song (single)</div>
+      </div>
+    </a>
     <a href="https://ffm.to/x30obe1" target="_blank">
       {{ $little_fires := resources.Get "little-fires.jpeg" }}
       <div
