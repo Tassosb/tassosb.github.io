@@ -1,6 +1,15 @@
 {{ define "main" -}}
 <div class="flex flex-col items-center mt-2">
   <div class="w-11/12 max-w-[449px]">
+    <a href="https://ffm.to/pkbq00d" target="_blank">
+      {{ $who_am_i_to_love := resources.Get "who-am-i-to-love.jpg" }}
+      <div
+        class="bg-beige border border-dark-border rounded p-3 mt-4 flex items-center hover:scale-105 duration-75"
+      >
+        <img src="{{ $who_am_i_to_love.Permalink }}" class="thumbnail" />
+        <div class="ml-4">Who Am I to Love? (single)</div>
+      </div>
+    </a>
     <a href="https://lynkify.in/album/crane-song/CluXnVBp" target="_blank">
       {{ $crane_song := resources.Get "crane-song.jpg" }}
       <div
@@ -28,16 +37,7 @@
         <div class="ml-4">Tired Eyes (album)</div>
       </div>
     </a>
-    <a href="https://ffm.to/9qmerme" target="_blank">
-      {{ $polly := resources.Get "polly-small.png" }}
-      <div
-        class="bg-beige border border-dark-border rounded p-3 mt-4 flex items-center hover:scale-105 duration-75"
-      >
-        <img src="{{ $polly.Permalink }}" class="thumbnail" />
-        <div class="ml-4">Polly the Drummer (single)</div>
-      </div>
-    </a>
-    <a href="https://ffm.to/2ekp0po" target="_blank">
+    <!-- <a href="https://ffm.to/2ekp0po" target="_blank">
       {{ $postcard := resources.Get "postcard-small.jpg" }}
       <div
         class="bg-beige border border-dark-border rounded p-3 mt-4 flex items-center hover:scale-105 duration-75"
@@ -57,7 +57,7 @@
         <img src="{{ $visit_lc.Permalink }}" class="thumbnail" />
         <div class="ml-4">Love Song for Las Cruces (video)</div>
       </div>
-    </a>
+    </a> -->
   </div>
   <div class="mx-auto mt-4 w-11/12 max-w-[450px]">
     <script
