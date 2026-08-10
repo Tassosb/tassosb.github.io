@@ -1,0 +1,153 @@
+/* CSS Reset */
+/* 1. Use a more intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins and padding from common elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Allow percentage-based heights and smooth typography scaling */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Avoid media overflow and template breaking issues */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Remove built-in typography overrides for forms */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 6. Avoid text-wrap clipping bugs */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* My Styles below */
+
+#title {
+  font-family: Akronim;
+  margin: 0 auto;
+  font-size: 6rem;
+  font-weight: 400;
+}
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+}
+
+.thumbnails-list {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-link {
+  margin-left: 10px;
+}
+
+.subscribe-field {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 80%;
+  max-width: 450px;
+}
+
+.music-links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.music-links-container {
+  width: 80%;
+  max-width: 449px;
+}
+
+.music-link-button {
+  --tw-duration: 75ms;
+  transition-duration: 75ms;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 0.25rem;
+  align-items: center;
+  display: flex;
+}
+
+.music-link-text {
+  margin-left: 5px;
+}
+
+.music-link-button:hover {
+  scale: 105%;
+}
+
+body {
+  background-image: url("assets/splash.jpeg");
+  font-family: "Fredoka", sans-serif;
+  background-size: cover;
+}
+
+.footer {
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-text {
+  color: white;
+}
+
+/* Prevent hover:scale effects on touch devices */
+@media (pointer: coarse) {
+  div:hover {
+    transform: none !important;
+  }
+}
