@@ -88,6 +88,17 @@ a {
   margin-left: 10px;
 }
 
+.call-to-action {
+  margin: 0 auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.coa-link {
+  color: yellow;
+}
+
 .subscribe-field {
   margin: 0 auto;
   margin-top: 15px;
